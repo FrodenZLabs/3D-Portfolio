@@ -1,8 +1,9 @@
 import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 import TitleHeader from "../components/TitleHeader";
 import ContactExperience from "../components/models/contact/ContactExperience";
 import { toast } from "react-toastify";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Contact = () => {
   const formRef = useRef();
@@ -44,12 +45,20 @@ const Contact = () => {
     }
   };
 
+  useGSAP(() => {
+    gsap.fromTo(
+      ".card-border",
+      { x: -100, opacity: 0 },
+      { x: 0, opacity: 1, stagger: 0.2, duration: 3, ease: "power2.inOut" }
+    );
+  }, []);
+
   return (
     <section id="contact" className="flex-center section-padding">
       <div className="w-full h-full px-5 md:px-10">
         <TitleHeader
           title="Get in Touch - Let's Connect"
-          sub="Have questions or ideas? Let's talk"
+          sub="💼 Have questions or ideas? Let's talk 🚀"
         />
 
         <div className="mt-16 grid-12-cols">

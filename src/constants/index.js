@@ -16,4 +16,11 @@ const counterItems = [
   { value: 90, suffix: "%", label: "Client Retention Rate" },
 ];
 
-export { words, counterItems };
+const socialsImg = [
+  { name: "insta", imgPath: "/images/insta.png" },
+  { name: "fb", imgPath: "/images/fb.png" },
+  { name: "x", imgPath: "/images/x.png" },
+  { name: "linkedin", imgPath: "/images/linkedin.png" },
+];
+
+export { words, counterItems, socialsImg };
