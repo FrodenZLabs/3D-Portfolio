@@ -1,9 +1,5 @@
-
-
 const ShowCase = () => {
-  return (
-    <div>ShowCase</div>
-  )
-}
+  return <div>ShowCase</div>;
+};
 
-export default ShowCase
+export default ShowCase;
