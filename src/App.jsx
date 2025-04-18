@@ -1,7 +1,13 @@
-import React from "react";
+import Hero from "./sections/Hero";
+import ShowCase from "./sections/ShowCase";
 
 const App = () => {
-  return <div className="text-red-500">App</div>;
+  return (
+    <>
+      <Hero />
+      <ShowCase />
+    </>
+  );
 };
 
 export default App;
