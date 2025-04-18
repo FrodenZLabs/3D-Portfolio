@@ -1,7 +1,9 @@
-import React from "react";
 import { words } from "../constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import Button from "../components/Button";
+import AnimatedCounter from "../components/AnimatedCounter";
+import HeroExperience from "../components/models/hero_models/HeroExperience";
 
 const Hero = () => {
   useGSAP(() => {
@@ -11,9 +13,9 @@ const Hero = () => {
       { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" }
     );
   }, []);
-  
+
   return (
-    <div id="hero" className="relative overflow-hidden">
+    <section id="hero" className="relative overflow-hidden">
       <div className="absolute top-0 left-0 z-10">
         <img src="/images/bg.png" alt="" />
       </div>
@@ -45,10 +47,29 @@ const Hero = () => {
               <h1>into Real Projects</h1>
               <h1>that Deliver Results</h1>
             </div>
+            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
+              Hi, I'm KibeTech, a developer based in Kenya with a passion for
+              code.
+            </p>
+
+            <Button
+              text="See My Work"
+              className="md:w-80 md:h-16 w-60 h-12"
+              id="counter"
+            />
           </div>
         </header>
+
+        {/* RIGHT: #D Model or Visual */}
+        <figure>
+          <div className="hero-3d-layout">
+            <HeroExperience />
+          </div>
+        </figure>
       </div>
-    </div>
+
+      <AnimatedCounter />
+    </section>
   );
 };
 
