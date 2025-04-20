@@ -46,10 +46,22 @@ const Contact = () => {
   };
 
   useGSAP(() => {
+    const card = [formRef.current];
+
     gsap.fromTo(
-      ".card-border",
+      formRef.current,
       { x: -100, opacity: 0 },
-      { x: 0, opacity: 1, stagger: 0.2, duration: 3, ease: "power2.inOut" }
+      {
+        x: 0,
+        opacity: 1,
+        stagger: 0.2,
+        duration: 3,
+        ease: "power2.inOut",
+        scrollTrigger: {
+          trigger: card,
+          start: "top bottom-=100",
+        },
+      }
     );
   }, []);
 
