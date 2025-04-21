@@ -5,6 +5,9 @@ import Hero from "./sections/Hero";
 import LogoShowcase from "./sections/LogoShowcase";
 import ShowCase from "./sections/ShowCase";
 import { ToastContainer } from "react-toastify";
+import TechStack from "./sections/TechStack";
+import Experience from "./sections/Experience";
+import Testimonials from "./sections/Testimonials";
 
 const App = () => {
   return (
@@ -14,6 +17,9 @@ const App = () => {
       <ShowCase />
       <LogoShowcase />
       <FeatureCards />
+      <Experience />
+      {/* <TechStack /> */}
+      <Testimonials />
       <Contact />
       <Footer />
     </>
