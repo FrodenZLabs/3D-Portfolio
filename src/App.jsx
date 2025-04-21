@@ -8,11 +8,13 @@ import { ToastContainer } from "react-toastify";
 import TechStack from "./sections/TechStack";
 import Experience from "./sections/Experience";
 import Testimonials from "./sections/Testimonials";
+import NavBar from "./components/Navbar";
 
 const App = () => {
   return (
     <>
       <ToastContainer />
+      <NavBar />
       <Hero />
       <ShowCase />
       <LogoShowcase />
