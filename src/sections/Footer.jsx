@@ -1,5 +1,5 @@
 import React from "react";
-import { socialsImg } from "../constants";
+import { socialImgs } from "../constants";
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
           <p>Terms & Conditions</p>
         </div>
         <div className="socials">
-          {socialsImg.map((socialImg, index) => (
+          {socialImgs.map((socialImg, index) => (
             <div key={index} className="icon">
               <img src={socialImg.imgPath} alt={socialImg.name} />
             </div>

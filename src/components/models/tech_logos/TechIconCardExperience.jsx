@@ -36,7 +36,7 @@ const TechIconCardExperience = ({ model }) => {
         </group>
       </Float>
 
-      <OrbitControls enableZoom={false} />
+      <OrbitControls />
     </Canvas>
   );
 };
