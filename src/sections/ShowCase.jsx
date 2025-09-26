@@ -51,8 +51,14 @@ const ShowCase = () => {
               <img src="/images/project1.png" alt="Ryde App Interface" />
             </div>
             <div className="text-content">
-              <h2>Smart Credit Risk Assessment System</h2>
-              <p className="text-white-50 md:text-xl">
+              <a
+                href="https://github.com/FrodenZLabs/MERN-Tech-Store.git"
+                target="_blank"
+                className="text-2xl text-white-50 font-semibold pt-4"
+              >
+                Smart Credit Risk Assessment System
+              </a>
+              <p className="text-white md:text-xl">
                 A web platform that helps financial institutions evaluate
                 student loan risks. Built with Node.js (Express), MongoDB, and
                 React.js, the system calculates dynamic risk scores and provides
@@ -63,23 +69,56 @@ const ShowCase = () => {
 
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={libraryRef}>
-              <div className="image-wrapper bg-[#ffefdb]">
+              <div className="image-wrapper group bg-[#ffefdb] mb-4">
                 <img
                   src="/images/project2.png"
                   alt="Cross-Platform Delivery Application"
+                  className="w-full h-full object-cover rounded-xl"
                 />
+
+                {/* Overlay */}
+                <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-pink-300 to-blue-300 font-semibold text-center opacity-0 group-hover:opacity-90 transition-opacity duration-300 rounded-xl">
+                  <p className="px-4 text-2xl italic text-gray-800">
+                    A Flutter + Node.js powered app enabling real-time order
+                    tracking, push notifications, and delivery status updates.
+                    Designed with an offline-first architecture, ensuring
+                    usability even in low connectivity.
+                  </p>
+                </div>
               </div>
-              <h2>Cross-Platform Delivery Application</h2>
+              <a
+                href="https://github.com/FrodenZLabs/Flutter-Delivery-App.git"
+                target="_blank"
+                className="text-2xl text-white-50 font-semibold pt-4"
+              >
+                Cross-Platform Delivery Application
+              </a>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
-              <div className="image-wrapper bg-[#ffe7eb]">
+              <div className="image-wrapper group bg-[#ffe7eb] mb-4">
                 <img
                   src="/images/project3.png"
                   alt="AI-Powered Plant Disease Detection"
+                  className="w-full h-full object-cover rounded-xl"
                 />
+
+                {/* Overlay */}
+                <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-gray-300 to-yellow-200 text-black font-semibold text-center opacity-0 group-hover:opacity-90 transition-opacity duration-300 rounded-xl">
+                  <p className="px-4 text-2xl italic text-gray-800">
+                    A machine learning-powered web application that detects
+                    plant diseases from images, helping farmers with instant
+                    crop health diagnostics.
+                  </p>
+                </div>
               </div>
-              <h2>AI-Powered Plant Disease Detection</h2>
+              <a
+                href="https://github.com/FrodenZLabs/Plant-Disease-CNN-Project.git"
+                target="_blank"
+                className="text-2xl text-white-50 font-semibold pt-4"
+              >
+                AI-Powered Plant Disease Detection
+              </a>
             </div>
           </div>
         </div>

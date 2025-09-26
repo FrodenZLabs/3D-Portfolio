@@ -258,6 +258,93 @@ const socialImgs = [
   },
 ];
 
+const projects = [
+  {
+    img: "/images/homepage.png",
+    name: "Youtube Clone",
+    demo: "",
+    code: "https://github.com/Dispenser254/React-redux-Youtube-Clone",
+    Title: "Youtube Clone",
+    description:
+      "Replicating the core functionalities of the renowned video-sharing platform, this project demonstrates my proficiency in front-end and back-end development.",
+    style: {
+      shadow: "shadow-[#B5C0D0]",
+      cover: "from-[#B5C0D0]",
+      display: "hidden group-hover:flex",
+    },
+  },
+  {
+    img: "/images/contact.png",
+    name: "Hotel Management System",
+    demo: "",
+    code: "https://github.com/Dispenser254/Hotel-Management-System",
+    Title: "Hotel Management System",
+    description:
+      "Developed to streamline hotel operations, this system offers comprehensive functionalities for managing reservations, room assignments, guest check-ins, and billing. ",
+    style: {
+      shadow: "shadow-[#BFEA7C]",
+      cover: "from-[#BFEA7C]",
+      display: "hidden group-hover:flex",
+    },
+  },
+  {
+    img: "/images/homepage.png",
+    name: "Real Estate",
+    demo: "",
+    code: "https://github.com/Dispenser254/Django-Real-Estate",
+    Title: "Real Estate System",
+    description:
+      "Designed to streamline property management and sales processes, this system offers features such as property listings, search filters, and appointment scheduling. ",
+    style: {
+      shadow: "shadow-[#8E7AB5]",
+      cover: "from-[#8E7AB5]",
+      display: "hidden group-hover:flex",
+    },
+  },
+  {
+    img: "/images/project1.png",
+    name: "ToDo App ",
+    demo: "",
+    code: "https://github.com/Dispenser254/react-todoapp",
+    Title: "ToDo App",
+    description:
+      "Built using React.js, this to-do application provides a simple yet powerful interface for managing tasks.",
+    style: {
+      shadow: "shadow-[#ECB159]",
+      cover: "from-[#ECB159]",
+      display: "hidden group-hover:flex",
+    },
+  },
+  {
+    img: "/images/project2.png",
+    name: "Note App",
+    demo: "",
+    code: "https://github.com/Dispenser254/Note-App",
+    Title: "Note App",
+    description:
+      "This application simplifies the process of capturing and organizing notes across various devices.",
+    style: {
+      shadow: "shadow-[#C6DCBA]",
+      cover: "from-[#C6DCBA]",
+      display: "hidden group-hover:flex",
+    },
+  },
+  {
+    img: "/images/project3.png",
+    name: "JWT Authentication App ",
+    demo: "",
+    code: "https://github.com/Dispenser254/JWT-Django-React-Authentication",
+    Title: "Authentication App",
+    description:
+      "Implementing JSON Web Token (JWT) authentication, this application ensures secure access to protected resources through token-based authentication.",
+    style: {
+      shadow: "shadow-[#9B4444]",
+      cover: "from-[#9B4444]",
+      display: "hidden group-hover:flex",
+    },
+  },
+];
+
 export {
   words,
   abilities,
@@ -270,4 +357,5 @@ export {
   techStackIcons,
   techStackImgs,
   navLinks,
+  projects,
 };
