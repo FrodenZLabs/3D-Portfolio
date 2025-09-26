@@ -5,18 +5,18 @@ import { Link } from "react-scroll";
 
 const Footer = () => {
   const navLinks = [
-    { id: 1, href: "Home" },
-    { id: 2, href: "About" },
-    { id: 3, href: "Projects" },
-    { id: 4, href: "Skills" },
-    { id: 5, href: "Contact" },
+    { id: "#", href: "Home" },
+    { id: "#hero", href: "About" },
+    { id: "#work", href: "Projects" },
+    { id: "#skills", href: "Skills" },
+    { id: "#contact", href: "Contact" },
   ];
 
   return (
     <>
       <footer className="footer">
         <div className="footer-container">
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col items-center md:items-start justify-center">
             <h3 className="text-white text-[1.75rem] font-bold pb-2">
               Stephen Kibe
             </h3>
@@ -48,26 +48,26 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="w-full xs:w-2/5 mt-8 sm:w-2/5 sm:mt-0 lg:w-[30%] sm:pl-20 lg:pl-12 justify-start">
+          <div className="w-full hidden md:block xs:w-2/5 mt-8 sm:w-2/5 sm:mt-0 lg:w-[30%] sm:pl-20 lg:pl-12 justify-start">
             <h3 className="text-white-50 text-[1.35rem] xs:text-2xl font-bold pb-4">
               Quick Links
             </h3>
             {navLinks.map(({ id, href }) => (
               <div key={id} className="group w-fit px-3">
-                <Link to={href} smooth duration={500}>
+                <a href={id}>
                   <div className="flex items-center justify-between w-fit gap-2 font-semibold text-white-50 cursor-pointer">
                     <FaArrowRight />
                     <span className="bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 group-hover:text-transparent duration-500 group-hover:animate-pulse">
                       {href}
                     </span>
                   </div>
-                </Link>
+                </a>
               </div>
             ))}
           </div>
         </div>
       </footer>
-      <div className="flex justify-center">
+      <div className="flex justify-center my-4">
         <p className="text-center text-white-50 md:text-end">
           &copy; {new Date().getFullYear()} FrodenZ Labs. All rights reserved.
         </p>

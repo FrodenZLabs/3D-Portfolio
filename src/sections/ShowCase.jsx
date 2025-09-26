@@ -78,7 +78,7 @@ const ShowCase = () => {
 
                 {/* Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-pink-300 to-blue-300 font-semibold text-center opacity-0 group-hover:opacity-90 transition-opacity duration-300 rounded-xl">
-                  <p className="px-4 text-2xl italic text-gray-800">
+                  <p className="px-4 text-sm md:text-2xl italic text-gray-800">
                     A Flutter + Node.js powered app enabling real-time order
                     tracking, push notifications, and delivery status updates.
                     Designed with an offline-first architecture, ensuring
@@ -105,7 +105,7 @@ const ShowCase = () => {
 
                 {/* Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-gray-300 to-yellow-200 text-black font-semibold text-center opacity-0 group-hover:opacity-90 transition-opacity duration-300 rounded-xl">
-                  <p className="px-4 text-2xl italic text-gray-800">
+                  <p className="px-4 text-sm md:text-2xl italic text-gray-800">
                     A machine learning-powered web application that detects
                     plant diseases from images, helping farmers with instant
                     crop health diagnostics.
