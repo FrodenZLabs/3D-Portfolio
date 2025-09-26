@@ -2,6 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
+import TitleHeader from "../components/TitleHeader";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -43,19 +44,19 @@ const ShowCase = () => {
   return (
     <div id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
-        <div className="showcaselayout">
+        <TitleHeader title="Projects ShowCase" sub="🛠️ My Projects Overview" />
+        <div className="showcaselayout mt-12 md:mt-24">
           <div className="first-project-wrapper" ref={rydeRef}>
             <div className="image-wrapper">
               <img src="/images/project1.png" alt="Ryde App Interface" />
             </div>
             <div className="text-content">
-              <h2>
-                On-Demand Rides Made Simple witha Powerful, User Friendly App
-                called Ryde
-              </h2>
+              <h2>Smart Credit Risk Assessment System</h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
-                user-friendly experience.
+                A web platform that helps financial institutions evaluate
+                student loan risks. Built with Node.js (Express), MongoDB, and
+                React.js, the system calculates dynamic risk scores and provides
+                real-time analytics.
               </p>
             </div>
           </div>
@@ -65,17 +66,20 @@ const ShowCase = () => {
               <div className="image-wrapper bg-[#ffefdb]">
                 <img
                   src="/images/project2.png"
-                  alt="Library Management Platform"
+                  alt="Cross-Platform Delivery Application"
                 />
               </div>
-              <h2>The Library Management Platform</h2>
+              <h2>Cross-Platform Delivery Application</h2>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
               <div className="image-wrapper bg-[#ffe7eb]">
-                <img src="/images/project3.png" alt="YC Directory App" />
+                <img
+                  src="/images/project3.png"
+                  alt="AI-Powered Plant Disease Detection"
+                />
               </div>
-              <h2>YC Directory - A Start-Up Showcase</h2>
+              <h2>AI-Powered Plant Disease Detection</h2>
             </div>
           </div>
         </div>

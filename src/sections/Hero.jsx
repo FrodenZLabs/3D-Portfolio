@@ -31,7 +31,7 @@ const Hero = () => {
                     {words.map((word, index) => (
                       <span
                         key={index}
-                        className="flex items-center md:gap-3 gap-1 pb-2"
+                        className="flex items-center md:gap-3 gap-2 pb-5"
                       >
                         <img
                           src={word.imgPath}
@@ -47,14 +47,17 @@ const Hero = () => {
               <h1>into Real Projects</h1>
               <h1>that Deliver Results</h1>
             </div>
-            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I'm KibeTech, a developer based in Kenya with a passion for
-              code.
+            <p className="text-white-50 text-sm md:text-xl relative z-10 max-w-3xl pointer-events-none">
+              Hi, I’m Kibe Labs, a software developer passionate about
+              transforming ideas into powerful digital products. With expertise
+              in backend engineering, API development, and full-stack web apps,
+              I help businesses and teams create solutions that are efficient,
+              secure, and scalable.
             </p>
 
             <Button
               text="See My Work"
-              className="md:w-80 md:h-16 w-60 h-12"
+              className="md:w-80 md:h-16 w-48 h-8"
               id="counter"
             />
           </div>

@@ -4,6 +4,7 @@ import ContactExperience from "../components/models/contact/ContactExperience";
 import { toast } from "react-toastify";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const formRef = useRef();
@@ -24,12 +25,12 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      //   await emailjs.sendForm(
-      //     import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-      //     import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-      //     formRef.current,
-      //     import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      //   );
+      await emailjs.sendForm(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      );
 
       toast.success(
         "Your message has been sent succeffully. We'll send a response as soon as possible"

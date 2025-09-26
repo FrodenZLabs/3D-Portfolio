@@ -65,14 +65,19 @@ const Experience = () => {
           sub="💼 My Career Overview"
         />
 
-        <div className="relative mt-32">
+        <div className="relative mt-16 md:mt-32">
           <div className="relative z-50 space-y-10 xl:space-y-32">
             {expCards.map((card) => (
               <div key={card.title} className="exp-card-wrapper">
                 <div className="xl:w-2/6">
                   <GlowCard card={card}>
-                    <div>
-                      <img src={card.imgPath} alt="exp-img" />
+                    <div className="flex gap-x-3 items-center">
+                      <img
+                        src={card.imgPath}
+                        alt="exp-img"
+                        className="rounded-full object-cover h-12 w-12"
+                      />
+                      <p className="text-white-50">{card.manImage}</p>
                     </div>
                   </GlowCard>
                 </div>
