@@ -76,6 +76,7 @@ const Experience = () => {
                         src={card.imgPath}
                         alt="exp-img"
                         className="rounded-full object-cover h-12 w-12"
+                        loading="lazy"
                       />
                       <p className="text-white-50">{card.manImage}</p>
                     </div>
@@ -89,7 +90,7 @@ const Experience = () => {
                     </div>
                     <div className="expText flex gap-5 md:gap-10 xl:gap-20 relative z-20">
                       <div className="timeline-logo">
-                        <img src={card.logoPath} alt="logo" />
+                        <img src={card.logoPath} alt="logo" loading="lazy" />
                       </div>
                       <div>
                         <h1 className="font-semibold text-3xl">{card.title}</h1>

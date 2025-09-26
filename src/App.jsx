@@ -9,10 +9,14 @@ import TechStack from "./sections/TechStack";
 import Experience from "./sections/Experience";
 import Testimonials from "./sections/Testimonials";
 import NavBar from "./components/Navbar";
+// import { useGlobalLoader } from "./components/useGlobalLoader";
+import Preloader from "./components/PreLoader";
 
 const App = () => {
+  // const progress = useGlobalLoader();
   return (
     <>
+      <Preloader />
       <ToastContainer />
       <NavBar />
       <Hero />

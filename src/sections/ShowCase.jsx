@@ -48,7 +48,11 @@ const ShowCase = () => {
         <div className="showcaselayout mt-12 md:mt-24">
           <div className="first-project-wrapper" ref={rydeRef}>
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Ryde App Interface" />
+              <img
+                src="/images/project1.png"
+                alt="Ryde App Interface"
+                loading="lazy"
+              />
             </div>
             <div className="text-content">
               <a
@@ -73,6 +77,7 @@ const ShowCase = () => {
                 <img
                   src="/images/project2.png"
                   alt="Cross-Platform Delivery Application"
+                  loading="lazy"
                   className="w-full h-full object-cover rounded-xl"
                 />
 
@@ -100,6 +105,7 @@ const ShowCase = () => {
                 <img
                   src="/images/project3.png"
                   alt="AI-Powered Plant Disease Detection"
+                  loading="lazy"
                   className="w-full h-full object-cover rounded-xl"
                 />
 
